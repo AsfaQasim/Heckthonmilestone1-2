@@ -1,0 +1,129 @@
+
+body {
+    font-family: 'Poppins', sans-serif; /* A clean and modern font */
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ensures the content takes the full height of the viewport */
+    text-align: center;
+    flex-direction: column;
+    color: #333;
+}
+
+header {
+    background-color: #2c3e50; /* Darker color for a sleek header */
+    color: #ecf0f1; /* Light color for contrast */
+    padding: 20px 0;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds subtle shadow for depth */
+}
+
+h1, h2 {
+    margin: 0;
+    color: #476b70;
+}
+
+/* Profile Picture Styling */
+.profile-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 5px solid #2c3e50; /* Adds a border around the profile picture */
+}
+
+/* Container for Main Content */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    width: 100%;
+    max-width: 800px; /* Keeps the content from stretching too wide */
+    background-color: #ecf0f1; /* Light background for the main content */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin-top: 20px;
+}
+
+/* Main Content Styling */
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Section Styling */
+section {
+    background-color: #fff;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    text-align: left; /* Left-align the text for better readability */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #3498db;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2c4e64;
+}
+
+@media (max-width: 480px) {
+
+    /* Adjustments for mobile devices */
+    header {
+        padding: 15px 0;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    .profile-picture {
+        width: 100px;
+        height: 100px;
+    }
+
+    h1 {
+        font-size: 1.2em;
+    }
+
+    h2 {
+        font-size: 1.1em;
+    }
+
+    section {
+        padding: 10px;
+    }
+}
